@@ -137,5 +137,7 @@ def write_to_file(file_name, prices, places):
     file.close()
 
 
-for product in ["Warp-Zelle"]:
+collect_orders("Bauxit")
+
+for product in ["Warp-Zelle", "Hämatit", "Quarz"]:
     collect_orders(product)
