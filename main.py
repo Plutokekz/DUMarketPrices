@@ -4,9 +4,11 @@ from tqdm import tqdm
 
 from Objects import Square
 from ScreenCapture import WindowCapture
-from utils import sub_array, image_to_string, prep_image
+from utils import sub_array, image_to_string, prep_image, read_offset_config
 
-window = WindowCapture(1920, 1080, (960, 540))
+x_off, y_off = read_offset_config()
+
+window = WindowCapture(1920, 1080, (x_off, y_off))
 
 search_field_square = Square((412, 129), (680, 162))
 search_field_clear_square = Square((656, 140), (668, 152))
@@ -94,7 +96,7 @@ def scroll_through_orders(number_of_orders_square, sort_markets_square, price_am
         price_amount_square.add_y_offset(int(30))
         x, y = window.get_screen_position(price_amount_square.center())
         pyautogui.moveTo(x, y)
-        pyautogui.sleep(1)
+        pyautogui.sleep(0.1)
         game = window.get_screenshot()
         buy_order_price_amount_image = sub_array(game, price_amount_square)
         buy_order_price_amount_image = prep_image(buy_order_price_amount_image)

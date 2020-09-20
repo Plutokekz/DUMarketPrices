@@ -155,3 +155,9 @@ def image_to_string(image, only_digits=False):
     return pytesseract.image_to_string(image, output_type=Output.STRING, lang='eng',
                                        config='--psm 6 -c '
                                               'user-patterns=tesseract/eng.user-patterns user-words=tesseract/eng.user-words')
+
+
+def read_offset_config():
+    with open("offset.config", "r") as file:
+        x, y = [int(x) for x in file.readlines()]
+    return x, y
