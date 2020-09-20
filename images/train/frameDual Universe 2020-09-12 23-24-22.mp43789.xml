@@ -1,0 +1,38 @@
+<annotation>
+	<folder>data</folder>
+	<filename>frameDual Universe 2020-09-12 23-24-22.mp43789.png</filename>
+	<path>F:\Python\PycharmProjects\OreDetection\data\frameDual Universe 2020-09-12 23-24-22.mp43789.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1728</width>
+		<height>1080</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Ore</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>845</xmin>
+			<ymin>413</ymin>
+			<xmax>942</xmax>
+			<ymax>517</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Ore</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>457</xmin>
+			<ymin>472</ymin>
+			<xmax>548</xmax>
+			<ymax>552</ymax>
+		</bndbox>
+	</object>
+</annotation>

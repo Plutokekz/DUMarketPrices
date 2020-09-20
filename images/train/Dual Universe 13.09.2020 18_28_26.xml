@@ -1,0 +1,50 @@
+<annotation>
+	<folder>data</folder>
+	<filename>Dual Universe 13.09.2020 18_28_26.png</filename>
+	<path>F:\Python\PycharmProjects\OreDetection\data\Dual Universe 13.09.2020 18_28_26.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2560</width>
+		<height>1600</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Ore</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>924</xmin>
+			<ymin>490</ymin>
+			<xmax>1543</xmax>
+			<ymax>1234</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Ore</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>10</xmin>
+			<ymin>351</ymin>
+			<xmax>598</xmax>
+			<ymax>871</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Ore</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>990</xmin>
+			<ymin>59</ymin>
+			<xmax>1131</xmax>
+			<ymax>206</ymax>
+		</bndbox>
+	</object>
+</annotation>
