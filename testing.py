@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-from main import buy_orders_price_amount_square, buy_orders_market_time_square
+from Statics import buy_orders_price_amount_square, buy_orders_market_time_square
 from utils import sub_array, image_to_string, scala_image
 
 

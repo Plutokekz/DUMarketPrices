@@ -1,11 +1,16 @@
 import cv2
 import numpy as np
 import pytesseract
+import win32gui
 from pytesseract import Output
 
 from Objects import Square
 
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+
+
+def windowEnumerationHandler(hwnd, top_windows):
+    top_windows.append((hwnd, win32gui.GetWindowText(hwnd)))
 
 
 def change_color(image, color_from, color_to):  # [72, 57, 34]
@@ -156,8 +161,3 @@ def image_to_string(image, only_digits=False):
                                        config='--psm 6 -c '
                                               'user-patterns=tesseract/eng.user-patterns user-words=tesseract/eng.user-words')
 
-
-def read_offset_config():
-    with open("offset.config", "r") as file:
-        x, y = [int(x) for x in file.readlines()]
-    return x, y
