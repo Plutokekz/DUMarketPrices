@@ -27,7 +27,7 @@ for more flags nad information use\
 ### Manuel Offset
 Make a Screenshot with Dual Universe open (with the right setting).
 Open it in any software that shows you pixel coordinates
-locate the pixel where the red lines are pointing (which you can see in the Image Below) and get the x and y coordinates of it.\
+locate the pixel where the red lines are pointing (which you can see in the Image Below) and get the ``x`` and ``y`` coordinates of it.\
 ``python main.py --use_manual_offset true --offset x --offset y --product yourproduct``
 
 ![t](https://i.imgur.com/DldbJJU.png)

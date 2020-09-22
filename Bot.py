@@ -27,7 +27,7 @@ class CantFindNumberError(Exception):
 
 
 class Market:
-
+    # TODO check scrollbar if on bottom scroll to top
     def __init__(self, window: WindowCapture):
         self.window = window
         self.path = "orders"
@@ -51,6 +51,7 @@ class Market:
         pyautogui.sleep(0.4)
 
     def collect_orders(self, product):
+        print(product)
         self._clear_search_field()
         self._search_search_field(product)
 

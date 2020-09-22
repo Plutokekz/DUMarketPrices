@@ -15,7 +15,7 @@ def main(argv):
     del argv
     window = WindowCapture(FLAGS.window_name, manual_offset=FLAGS.use_manual_offset, offset=FLAGS.offset)
     market = Market(window)
-    for product in FLAGS.product_list:
+    for product in FLAGS.product:
         market.collect_orders(product)
 
 
